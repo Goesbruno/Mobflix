@@ -1,6 +1,5 @@
-![Thumbnail GitHub](https://user-images.githubusercontent.com/8989346/123294187-ff901300-d4ea-11eb-963c-ac1561afac6f.png)
+![Thumbnail GitHub](img/Mobile-Mobflix.png)
 
-![](https://img.shields.io/github/license/alura-cursos/android-com-kotlin-personalizando-ui)
 
 # Mobflix
 
@@ -14,9 +13,10 @@ O App permite cadastrar vídeos do Youtube nas categorias:
 - Data Science; 
 - DevOps; 
 - UX e Design.
+
 Na página inicial ele lista os vídeos, exibindo a imagem de capa e a categoria de cada vídeo. Ao clicar em um vídeo o usuário é encaminhado para o respectivo vídeo no aplicativo do Youtube. Os vídeos são armazenafos em um banco de dados para que o usuário não perca sua lista de vídeos.
 
-![](img/amostra.gif)
+![](img/homescreen.gif) ![](img/videoform.gif) ![](img/youtube.gif) ![](img/remove.gif)
 
 ## ✔️ Técnicas e tecnologias utilizadas
 
@@ -35,11 +35,11 @@ As técnicas e tecnologias utilizadas pra isso são:
 
 O desafio extra do challenge foi criar uma exibição dos itens filtrados por categoria. 
 
-![orgs-desafio-detalhes](https://user-images.githubusercontent.com/8989346/124600562-3a743e00-de3d-11eb-9d45-15e8a8d2976f.gif)
+![](img/filter.gif)
 
 ## 📁 Acesso ao projeto
 
-Você pode [acessar o código fonte do projeto inicial](https://github.com/alura-cursos/android-com-kotlin-personalizando-ui/tree/projeto-inicial) ou [baixá-lo](https://github.com/alura-cursos/android-com-kotlin-personalizando-ui/archive/refs/heads/projeto-inicial.zip).
+Você pode [acessar o código fonte do projeto](https://github.com/Goesbruno/Mobflix/tree/main) ou [baixá-lo](https://github.com/Goesbruno/Mobflix/archive/refs/heads/main.zip).
 
 ## 🛠️ Abrir e rodar o projeto
 
