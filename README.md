@@ -14,10 +14,14 @@ O App permite cadastrar vídeos do Youtube nas categorias:
 - DevOps; 
 - UX e Design.
 
-Na página inicial ele lista os vídeos, exibindo a imagem de capa e a categoria de cada vídeo. Ao clicar em um vídeo o usuário é encaminhado para o respectivo vídeo no aplicativo do Youtube. Os vídeos são armazenafos em um banco de dados para que o usuário não perca sua lista de vídeos.
+Na página inicial ele lista os vídeos, exibindo a imagem de capa e a categoria de cada vídeo. Ao clicar em um vídeo o usuário é encaminhado para o respectivo vídeo no aplicativo do Youtube. Os vídeos são armazenados em um banco de dados local para que o usuário não perca sua lista de vídeos.
 
-![](img/homescreen.gif) ![](img/videoform.gif) ![](img/youtube.gif) ![](img/remove.gif)
-
+<p float="left" align="center">
+  <img alt="homescreen" width="20%" src="img/homescreen.gif"/>
+  <img alt="video form" width="20%" src="img/videoform.gif"/>
+  <img alt="update and delete" width="20%" src="img/remove.gif"/>
+  <img alt="youtube intent" width="20%" src="img/youtube.gif"/>
+  
 ## ✔️ Técnicas e tecnologias utilizadas
 
 As técnicas e tecnologias utilizadas pra isso são:
@@ -35,7 +39,7 @@ As técnicas e tecnologias utilizadas pra isso são:
 
 O desafio extra do challenge foi criar uma exibição dos itens filtrados por categoria. 
 
-![](img/filter.gif)
+<img alt="category filter" width="30%" src="img/filter.gif"/>
 
 ## 📁 Acesso ao projeto
 
