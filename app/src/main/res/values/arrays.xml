@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="com_google_android_gms_fonts_certs">
+        <item>@array/base64_cert_1</item>
+        <item>@array/base64_cert_2</item>
+    </array>
+
+    <string-array name="base64_cert_1">
+        <item>MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA...</item>
+    </string-array>
+    <string-array name="base64_cert_2">
+        <item>MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA...</item>
+    </string-array>
+</resources>
