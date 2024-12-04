@@ -17,7 +17,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
-import com.goesbruno.mobflix.ui.components.FilteredVideoListScreen
+import com.goesbruno.mobflix.ui.screen.FilteredVideoListScreen
 import com.goesbruno.mobflix.ui.screen.HomeScreen
 import com.goesbruno.mobflix.ui.screen.VideoFormScreen
 import com.goesbruno.mobflix.ui.state.HomeScreenUIState

@@ -1,4 +1,4 @@
-package com.goesbruno.mobflix.ui.components
+package com.goesbruno.mobflix.ui.screen
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
@@ -33,6 +33,9 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.goesbruno.mobflix.R
 import com.goesbruno.mobflix.model.Video
+import com.goesbruno.mobflix.ui.components.CategoryTag
+import com.goesbruno.mobflix.ui.components.EmptyList
+import com.goesbruno.mobflix.ui.components.YouTubeThumbnail
 import com.goesbruno.mobflix.ui.state.FilteredVideoListScreenUiState
 import com.goesbruno.mobflix.ui.theme.Black
 import com.goesbruno.mobflix.ui.theme.Blue
@@ -55,10 +58,9 @@ fun FilteredVideoListScreen(
     )
 }
 
-
 @Composable
 fun FilteredVideoListScreen(
-    modifier: Modifier = Modifier,
+    modifier: Modifier = Modifier.Companion,
     state: FilteredVideoListScreenUiState = FilteredVideoListScreenUiState(),
     onVideoLongClick: (video: Video) -> Unit = {},
     onVideoClick: (video: Video) -> Unit = {},
@@ -70,13 +72,13 @@ fun FilteredVideoListScreen(
             .fillMaxSize()
             .background(Black)
             .padding(horizontal = 35.dp),
-        horizontalAlignment = Alignment.CenterHorizontally,
+        horizontalAlignment = Alignment.Companion.CenterHorizontally,
         verticalArrangement = Arrangement.Top
     ) {
-        Spacer(Modifier.height(38.dp))
+        Spacer(Modifier.Companion.height(38.dp))
         Text(
             text = "MOBFLIX",
-            Modifier.padding(bottom = 8.dp),
+            Modifier.Companion.padding(bottom = 8.dp),
             fontSize = 32.sp,
             fontWeight = FontWeight(400),
             fontFamily = FontFamily(Font(R.font.bebas_neue)),
@@ -87,14 +89,14 @@ fun FilteredVideoListScreen(
             verticalArrangement = Arrangement.spacedBy(18.dp)
         ) {
             Box(
-                Modifier
+                Modifier.Companion
                     .fillMaxWidth()
             ) {
                 LazyRow(
-                    Modifier
+                    Modifier.Companion
                         .fillMaxWidth()
                         .padding(top = 32.dp),
-                    verticalAlignment = Alignment.CenterVertically,
+                    verticalAlignment = Alignment.Companion.CenterVertically,
                     horizontalArrangement = Arrangement.Absolute.SpaceBetween
                 ) {
                     item {
@@ -102,14 +104,14 @@ fun FilteredVideoListScreen(
                             text = "Categoria:",
                             fontSize = 32.sp,
                             fontWeight = FontWeight(700),
-                            color = Color.White
+                            color = Color.Companion.White
                         )
                     }
                     item {
                         CategoryTag(
                             category = state.selectedCategory,
-                            Modifier
-                                .clickable {onTagClick()}
+                            Modifier.Companion
+                                .clickable { onTagClick() }
                         )
                     }
 
@@ -119,7 +121,7 @@ fun FilteredVideoListScreen(
                 //Video list
                 LazyColumn(
                     contentPadding = PaddingValues(bottom = 35.dp),
-                    horizontalAlignment = Alignment.CenterHorizontally,
+                    horizontalAlignment = Alignment.Companion.CenterHorizontally,
                     verticalArrangement = Arrangement.spacedBy(18.dp)
                 ) {
                     state.videoList.forEach { video ->
@@ -127,9 +129,9 @@ fun FilteredVideoListScreen(
                         val url = video.url
                         item {
                             Box(
-                                Modifier
+                                Modifier.Companion
                                     .height(220.dp),
-                                contentAlignment = Alignment.Center
+                                contentAlignment = Alignment.Companion.Center
                             ) {
                                 Column(
                                     verticalArrangement = Arrangement.spacedBy(8.dp)
@@ -138,7 +140,7 @@ fun FilteredVideoListScreen(
                                     YouTubeThumbnail(
                                         videoUrl = url,
                                         contentDescription = null,
-                                        modifier = Modifier
+                                        modifier = Modifier.Companion
                                             .clip(RoundedCornerShape(8.dp))
                                             .width(320.dp)
                                             .height(180.dp)
